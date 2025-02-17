@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding: 10px;
+}
+
+.to-app{
+    width: 60%;
+    min-height: 100vh;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 10px;
+
+
+}
+.to-app h2{
+    color: #4e085f;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.container img{
+    width: 30px;
+    height: 40px;
+    margin-left: 30px;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    background: #4e085f;
+    padding-left: 20px;
+    margin-bottom: 25px;
+
+}
+.row>input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 30px;
+    background: #ca7ade;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+   
+
+
+}
+ul li::before{
+    content: ' ';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-image: url(unchecked-checkbox.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left:8px;
+}
+.cheked{
+    text-decoration: line-through;
+}
+ul li.cheked::before{
+   background-image: url(unchecked-checkbox-icon-5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 30px;
+    text-align:center;
+    padding-top: 5px;
+    border-radius: 30px;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
